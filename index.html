@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cabinet de Psychanalyse</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -54,6 +55,7 @@
     z-index: 100;
     padding: 1.8rem 3rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
@@ -75,7 +77,7 @@
     text-decoration: none;
   }
 
-  .nav-links { display: flex; gap: 2.2rem; }
+  .nav-links { display: flex; gap: 2.2rem; padding-top: 0; }
 
   .nav-links a {
     font-family: 'Lora', serif;
@@ -584,6 +586,11 @@
     .nav-links a { font-size: 0.72rem; }
     section { padding: 5rem 6vw; }
     .contact-info { flex-direction: column; gap: 2rem; }
+  }
+    
+  @media (max-width: 480px) {
+    nav { flex-direction: column; }
+    .nav-links { padding-top: 0.5rem; }
   }
 </style>
 </head>
