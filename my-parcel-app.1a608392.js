@@ -1,0 +1,2 @@
+const nav=document.getElementById("navbar");window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60)});const reveals=document.querySelectorAll(".reveal"),observer=new IntersectionObserver(e=>{e.forEach((e,r)=>{e.isIntersecting&&(setTimeout(()=>{e.target.classList.add("visible")},80*r),observer.unobserve(e.target))})},{threshold:.15,rootMargin:"0px 0px -40px 0px"});reveals.forEach(e=>observer.observe(e));
+//# sourceMappingURL=my-parcel-app.1a608392.js.map
